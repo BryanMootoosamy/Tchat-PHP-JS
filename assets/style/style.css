@@ -66,7 +66,8 @@ body {
         border: 3px solid grey;
         border-radius: 8px;
         transform: translateX(-10vw);
-        margin-bottom: 5vh; }
+        margin-bottom: 5vh;
+        padding: 2vh 2vw; }
       .window .display .top .userState {
         display: block;
         height: 40vh;
@@ -81,5 +82,12 @@ body {
 
 #displayUser {
   color: green; }
+
+#line {
+  font-family: "Indie Flower";
+  padding-bottom: 1.5vh; }
+
+#messageLine {
+  padding-bottom: 1.5vh; }
 
 /*# sourceMappingURL=style.css.map */
