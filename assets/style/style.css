@@ -1,0 +1,85 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+body {
+  overflow-x: hidden; }
+
+.form {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../pics/login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .form .titre {
+    margin-left: 3vw;
+    padding-top: 15vh;
+    font-family: "Indie Flower";
+    font-size: 5vh; }
+  .form .content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15vh; }
+    .form .content .log h3 {
+      margin-bottom: 3vh;
+      font-family: "Indie Flower";
+      font-size: 3vh; }
+    .form .content .log .signUp p {
+      font-size: 2vh;
+      font-family: "Indie Flower";
+      color: #18FFEE; }
+    .form .content .log .signUp input {
+      margin-top: 2vh;
+      margin-bottom: 1vh; }
+    .form .content .sign h3 {
+      margin-bottom: 3vh;
+      font-family: "Indie Flower";
+      font-size: 3vh; }
+    .form .content .sign .signIn p {
+      font-size: 2vh;
+      font-family: "Indie Flower";
+      color: #18FFEE; }
+    .form .content .sign .signIn input {
+      margin-top: 2vh;
+      margin-bottom: 1vh; }
+
+.window {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../pics/convo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .window .logoff {
+    float: right;
+    margin-right: 2vw;
+    margin-top: 2vh; }
+  .window .display {
+    padding-top: 20vh;
+    padding-left: 30vw; }
+    .window .display .top {
+      display: flex; }
+      .window .display .top .screen {
+        display: block;
+        height: 40vh;
+        width: 60vw;
+        overflow-y: scroll;
+        background-color: white;
+        border: 3px solid grey;
+        border-radius: 8px;
+        transform: translateX(-10vw);
+        margin-bottom: 5vh; }
+      .window .display .top .userState {
+        display: block;
+        height: 40vh;
+        width: 15vw; }
+        .window .display .top .userState h3 {
+          margin-bottom: 5vh;
+          margin-top: 3vh; }
+        .window .display .top .userState .userOffline {
+          color: grey; }
+    .window .display .input {
+      transform: translateX(2vw); }
+
+#displayUser {
+  color: green; }
+
+/*# sourceMappingURL=style.css.map */
