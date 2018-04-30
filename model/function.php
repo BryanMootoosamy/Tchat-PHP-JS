@@ -10,3 +10,8 @@
             return $sanitized;
         }
     }
+    function attributionGET($virtualVar) {
+        if (isset($_GET[$virtualVar]) && !empty($_GET[$virtualVar])) {
+            return $_GET[$virtualVar];
+        }
+    }

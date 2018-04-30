@@ -11,7 +11,7 @@ class Request {
         req.onreadystatechange = () => {
             //appelle des fonctions prototypées
             if (req.readyState == 4) {
-                let screen = document.getElementById("screen");
+                let screen = document.getElementById("tchatMessage");
                 screen.innerHTML = req.response;
             }
         }
@@ -39,6 +39,17 @@ class Request {
                 offlineDiv.innerHTML = req.response;
             }
         }
+    }
+    generic() {
+        let req = new XMLHttpRequest();
+        req.open(this.type,this.url,this.sync);
+        req.send();
+    }
+    sendMessage(messageToSend) {
+        let req = new XMLHttpRequest();
+        req.open(this.type,this.url,this.sync);
+        req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        req.send(messageToSend);
     }
 
 }

@@ -8,7 +8,6 @@
     require view."header.php";
     if (isset($_SESSION['username'])) {
         if (isset($_GET['action']) && $_GET['action'] == 'tchat') {
-                require model."sendMessage.php";
                 require view."tchat.php";
         }
         else {
